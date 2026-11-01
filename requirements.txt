@@ -1,0 +1,10 @@
+PyMuPDF
+python-docx
+langchain-text-splitters
+tiktoken
+truststore
+rank-bm25
+openai
+python-dotenv
+openpyxl
+streamlit

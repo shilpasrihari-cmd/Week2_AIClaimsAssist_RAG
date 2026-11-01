@@ -1,0 +1,2249 @@
+{
+  "company": "Meridian Mutual Insurance SE",
+  "counts": {
+    "adjusters": 2,
+    "agents": 3,
+    "by_doc_type": {
+      "accident_statement": 4,
+      "accident_statement_scanned": 4,
+      "adjuster_report": 5,
+      "claims_manual": 1,
+      "commission_summary": 1,
+      "customer_faq": 1,
+      "denial_letter": 2,
+      "denial_letter_scanned": 2,
+      "estimate": 3,
+      "evidence_photo": 5,
+      "fnol": 5,
+      "fnol_scanned": 5,
+      "id_card": 6,
+      "id_card_scanned": 6,
+      "id_photo": 6,
+      "loss_run": 1,
+      "police_report": 4,
+      "policy_contract": 5,
+      "policy_declarations": 5,
+      "policy_endorsements": 5,
+      "policy_schedule": 5,
+      "premium_register": 1,
+      "reserve_register": 1,
+      "settlement_letter": 2,
+      "settlement_letter_scanned": 2,
+      "underwriting_guidelines": 1
+    },
+    "by_format": {
+      "csv": 1,
+      "docx": 6,
+      "jpg": 34,
+      "md": 2,
+      "pdf": 42,
+      "xlsx": 3
+    },
+    "claims": 5,
+    "documents": 88,
+    "policies": 5,
+    "policyholders": 6
+  },
+  "documents": [
+    {
+      "doc_id": "DOC-C-1000-ADJ",
+      "doc_type": "adjuster_report",
+      "entity_ids": [
+        "C-1000",
+        "COM-0000001",
+        "PH-00006",
+        "AD-002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1000-adjuster-report.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1000",
+          "field": "cause",
+          "value": "business interruption"
+        },
+        {
+          "entity_id": "C-1000",
+          "field": "status",
+          "value": "closed"
+        },
+        {
+          "entity_id": "C-1000",
+          "field": "adjuster_id",
+          "value": "AD-002"
+        }
+      ],
+      "sha256": "b50afb5b49cc8f4142cc48a46159bff7087f21b0bcf8ba1d6fee8aa7310a4faa",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1000-ESTIMATE",
+      "doc_type": "estimate",
+      "entity_ids": [
+        "C-1000",
+        "COM-0000001",
+        "PH-00006",
+        "AD-002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1000-estimate.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1000",
+          "field": "estimate_net_payable",
+          "value": "\u20ac10,650.00"
+        }
+      ],
+      "sha256": "c8bc77f7eb067d615a67524a1aae97a7e9f567346ab85ac4d3e5d8c2af56d2f5",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1000-EVIDENCE",
+      "doc_type": "evidence_photo",
+      "entity_ids": [
+        "C-1000"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "evidence/C-1000-evidence.jpg",
+      "prompt_spec": {
+        "caption": "A closed small business with shutters down and a temporary-closure notice \u2014 Commercial claim C-1000 (Ireland).",
+        "cause": "business_interruption",
+        "claim_id": "C-1000",
+        "country": "IE",
+        "damage_area": "shopfront",
+        "doc_id": "DOC-C-1000-EVIDENCE",
+        "kind": "commercial_damage",
+        "line": "bop",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)",
+        "params": {
+          "aspect_ratio": "4:3",
+          "resolution": "1K",
+          "seed": 4201986
+        },
+        "path": "evidence/C-1000-evidence.jpg",
+        "prompt": "A candid amateur smartphone photo submitted as insurance claim evidence in Ireland: a closed small business with shutters down and a temporary-closure notice. Natural daylight, slightly imperfect amateur phone-camera framing, realistic and true-to-life. no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)."
+      },
+      "provenance": [
+        {
+          "entity_id": "C-1000",
+          "field": "evidence_damage",
+          "value": "shopfront"
+        }
+      ],
+      "rendered": true,
+      "sha256": "4975e1d4aa40cb686472686a8e7fe207b4dc6003dfd83b2be76a52107a77e90f",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1000-FNOL",
+      "doc_type": "fnol",
+      "entity_ids": [
+        "C-1000",
+        "COM-0000001",
+        "PH-00006",
+        "AD-002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1000-fnol.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1000",
+          "field": "cause",
+          "value": "business interruption"
+        },
+        {
+          "entity_id": "C-1000",
+          "field": "date_of_loss",
+          "value": "2024-07-13"
+        },
+        {
+          "entity_id": "C-1000",
+          "field": "status",
+          "value": "closed"
+        },
+        {
+          "entity_id": "C-1000",
+          "field": "policy_id",
+          "value": "COM-0000001"
+        }
+      ],
+      "sha256": "32b3d6c97fc7f1a4c9e37945b00f32e9b0bab5579f589cd16b520ec2953a800d",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1000-FNOL-SCAN",
+      "doc_type": "fnol_scanned",
+      "entity_ids": [
+        "C-1000",
+        "COM-0000001",
+        "PH-00006",
+        "AD-002"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1000-fnol-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1000-FNOL",
+      "sha256": "fbfeebe25c8d3f8ce6667f101dd398579eb3ce1111671bc642ef108092b53ea7",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1000-SETTLEMENT",
+      "doc_type": "settlement_letter",
+      "entity_ids": [
+        "C-1000",
+        "COM-0000001",
+        "PH-00006",
+        "AD-002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1000-settlement-letter.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1000",
+          "field": "paid",
+          "value": "\u20ac10,650.00"
+        },
+        {
+          "entity_id": "C-1000",
+          "field": "status",
+          "value": "closed"
+        }
+      ],
+      "sha256": "ecceb54a2f94ba075d3db4c0c8ca131af013be1835baadb0eb891013c07dd7c8",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1000-SETTLEMENT-SCAN",
+      "doc_type": "settlement_letter_scanned",
+      "entity_ids": [
+        "C-1000",
+        "COM-0000001",
+        "PH-00006",
+        "AD-002"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1000-settlement-letter-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1000-SETTLEMENT",
+      "sha256": "48bfcb755cd04749ff4ce793b188362213532da07df62665f60160a74097d654",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1001-ACCIDENT",
+      "doc_type": "accident_statement",
+      "entity_ids": [
+        "C-1001",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1001-accident-statement.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1001",
+          "field": "line",
+          "value": "personal_auto"
+        }
+      ],
+      "sha256": "5d74b3e38b2244cddec0d5d3efa68ee7e3d4ddc34ceaf3973f3791f50f7fd896",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1001-ACCIDENT-SCAN",
+      "doc_type": "accident_statement_scanned",
+      "entity_ids": [
+        "C-1001",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-002"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1001-accident-statement-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1001-ACCIDENT",
+      "sha256": "9b76a83a023645929552d0b7aec518532160525dbd86e125a151c0b8a5f58c66",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1001-ADJ",
+      "doc_type": "adjuster_report",
+      "entity_ids": [
+        "C-1001",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1001-adjuster-report.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1001",
+          "field": "cause",
+          "value": "vandalism"
+        },
+        {
+          "entity_id": "C-1001",
+          "field": "status",
+          "value": "open"
+        },
+        {
+          "entity_id": "C-1001",
+          "field": "adjuster_id",
+          "value": "AD-002"
+        }
+      ],
+      "sha256": "2e42d228157e4d0cd9c7f6770eb115d699cbb9d2c0bbf5172002fb919c12b35e",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1001-ESTIMATE",
+      "doc_type": "estimate",
+      "entity_ids": [
+        "C-1001",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1001-estimate.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1001",
+          "field": "estimate_net_payable",
+          "value": "\u20ac2,050.00"
+        }
+      ],
+      "sha256": "9be327dd9b172c63271679b60b49f4afb5d1c99202e79a0969263576d2797046",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1001-EVIDENCE",
+      "doc_type": "evidence_photo",
+      "entity_ids": [
+        "C-1001"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "evidence/C-1001-evidence.jpg",
+      "prompt_spec": {
+        "caption": "A car with scratched paintwork and a keyed door panel \u2014 Motor claim C-1001 (Italy).",
+        "cause": "vandalism",
+        "claim_id": "C-1001",
+        "country": "IT",
+        "damage_area": "paintwork and a door panel",
+        "doc_id": "DOC-C-1001-EVIDENCE",
+        "kind": "vehicle_damage",
+        "line": "personal_auto",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)",
+        "params": {
+          "aspect_ratio": "4:3",
+          "resolution": "1K",
+          "seed": 4201987
+        },
+        "path": "evidence/C-1001-evidence.jpg",
+        "prompt": "A candid amateur smartphone photo submitted as insurance claim evidence in Italy: a car with scratched paintwork and a keyed door panel. Natural daylight, slightly imperfect amateur phone-camera framing, realistic and true-to-life. no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)."
+      },
+      "provenance": [
+        {
+          "entity_id": "C-1001",
+          "field": "evidence_damage",
+          "value": "paintwork and a door panel"
+        }
+      ],
+      "rendered": true,
+      "sha256": "e462b3868ba25a12fd8bec918918501ca5a9def3a82cdf719e0d78aa440d325d",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1001-FNOL",
+      "doc_type": "fnol",
+      "entity_ids": [
+        "C-1001",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1001-fnol.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1001",
+          "field": "cause",
+          "value": "vandalism"
+        },
+        {
+          "entity_id": "C-1001",
+          "field": "date_of_loss",
+          "value": "2024-02-17"
+        },
+        {
+          "entity_id": "C-1001",
+          "field": "status",
+          "value": "open"
+        },
+        {
+          "entity_id": "C-1001",
+          "field": "policy_id",
+          "value": "MOT-0000002"
+        }
+      ],
+      "sha256": "4867e92f7829562db88df499ff59d27409c84ac0a6e3d778e1d170d6e6fac3b0",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1001-FNOL-SCAN",
+      "doc_type": "fnol_scanned",
+      "entity_ids": [
+        "C-1001",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-002"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1001-fnol-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1001-FNOL",
+      "sha256": "82e8d3b9051a6b96319f53a9aafcfed3c5c17af91c2bbc0f889a0d3651bd6b66",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1001-POLICE",
+      "doc_type": "police_report",
+      "entity_ids": [
+        "C-1001",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-002"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1001-police-report-scanned.jpg",
+      "provenance": [
+        {
+          "entity_id": "C-1001",
+          "field": "police_report_ref",
+          "value": "PR-2024-307292"
+        }
+      ],
+      "sha256": "3899e116a556e58bc82dba0f04d796ee3656e0fd91d31262d869240c39b8f103",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-ACCIDENT",
+      "doc_type": "accident_statement",
+      "entity_ids": [
+        "C-1002",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1002-accident-statement.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1002",
+          "field": "line",
+          "value": "personal_auto"
+        }
+      ],
+      "sha256": "b515fc0664e24ac7faf5a4ab5200515bb1269db24fa9973878629a58844e1358",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-ACCIDENT-SCAN",
+      "doc_type": "accident_statement_scanned",
+      "entity_ids": [
+        "C-1002",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1002-accident-statement-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1002-ACCIDENT",
+      "sha256": "e467c86a459744d428f574ea238a0bd796fec82d705c75579ad0bb71698c89eb",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-ADJ",
+      "doc_type": "adjuster_report",
+      "entity_ids": [
+        "C-1002",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1002-adjuster-report.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1002",
+          "field": "cause",
+          "value": "theft"
+        },
+        {
+          "entity_id": "C-1002",
+          "field": "status",
+          "value": "denied"
+        },
+        {
+          "entity_id": "C-1002",
+          "field": "adjuster_id",
+          "value": "AD-001"
+        }
+      ],
+      "sha256": "76d22aa49f218bae2691d8a3fddb5f793b2e0f9d4026b40b7d99be84fc8caa85",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-DENIAL",
+      "doc_type": "denial_letter",
+      "entity_ids": [
+        "C-1002",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1002-denial-letter.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1002",
+          "field": "status",
+          "value": "denied"
+        }
+      ],
+      "sha256": "044da2a078af34d9c2dd838d72e6f67bf6fdda292b2bab0ddd484596c9e1a373",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-DENIAL-SCAN",
+      "doc_type": "denial_letter_scanned",
+      "entity_ids": [
+        "C-1002",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1002-denial-letter-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1002-DENIAL",
+      "sha256": "7df5354af9f93dc91e888abe5169e7f1d68c766ba47e19bceb4a83e7b284e4d0",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-EVIDENCE",
+      "doc_type": "evidence_photo",
+      "entity_ids": [
+        "C-1002"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "evidence/C-1002-evidence.jpg",
+      "prompt_spec": {
+        "caption": "A car with a smashed side window and damaged door lock after a break-in \u2014 Motor claim C-1002 (Ireland).",
+        "cause": "theft",
+        "claim_id": "C-1002",
+        "country": "IE",
+        "damage_area": "side window and door lock",
+        "doc_id": "DOC-C-1002-EVIDENCE",
+        "kind": "vehicle_damage",
+        "line": "personal_auto",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)",
+        "params": {
+          "aspect_ratio": "4:3",
+          "resolution": "1K",
+          "seed": 4201988
+        },
+        "path": "evidence/C-1002-evidence.jpg",
+        "prompt": "A candid amateur smartphone photo submitted as insurance claim evidence in Ireland: a car with a smashed side window and damaged door lock after a break-in. Natural daylight, slightly imperfect amateur phone-camera framing, realistic and true-to-life. no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)."
+      },
+      "provenance": [
+        {
+          "entity_id": "C-1002",
+          "field": "evidence_damage",
+          "value": "side window and door lock"
+        }
+      ],
+      "rendered": true,
+      "sha256": "04c26108df210e27b49612ad369316b14894c55e414d42fb59624f42bbf6dee5",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-FNOL",
+      "doc_type": "fnol",
+      "entity_ids": [
+        "C-1002",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1002-fnol.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1002",
+          "field": "cause",
+          "value": "theft"
+        },
+        {
+          "entity_id": "C-1002",
+          "field": "date_of_loss",
+          "value": "2025-01-31"
+        },
+        {
+          "entity_id": "C-1002",
+          "field": "status",
+          "value": "denied"
+        },
+        {
+          "entity_id": "C-1002",
+          "field": "policy_id",
+          "value": "MOT-0000004"
+        }
+      ],
+      "sha256": "e05321f0082510dba9547fd0869cf43ffc49a55c45a92381cd1b823156b1ae3d",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-FNOL-SCAN",
+      "doc_type": "fnol_scanned",
+      "entity_ids": [
+        "C-1002",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1002-fnol-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1002-FNOL",
+      "sha256": "e03de0ee4fb8e7c80c2cf75c71aaba12fcad739c3b8aebfd034c4cbdc07a2130",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1002-POLICE",
+      "doc_type": "police_report",
+      "entity_ids": [
+        "C-1002",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1002-police-report-scanned.jpg",
+      "provenance": [
+        {
+          "entity_id": "C-1002",
+          "field": "police_report_ref",
+          "value": "PR-2025-797305"
+        }
+      ],
+      "sha256": "0897076543cba8ee0d366ec47875d41ad8caacfdcacf9e752591fd794d68dd5f",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-ACCIDENT",
+      "doc_type": "accident_statement",
+      "entity_ids": [
+        "C-1003",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1003-accident-statement.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1003",
+          "field": "line",
+          "value": "personal_auto"
+        }
+      ],
+      "sha256": "ef8b0972bdb4768e5e737618c3be09219c6a06b692c39f864a8f7138677d3fc1",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-ACCIDENT-SCAN",
+      "doc_type": "accident_statement_scanned",
+      "entity_ids": [
+        "C-1003",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1003-accident-statement-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1003-ACCIDENT",
+      "sha256": "92692660dd22fc9bac6e7626e2671fbcf2b08671ecb3cdfde54c36bda408b90d",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-ADJ",
+      "doc_type": "adjuster_report",
+      "entity_ids": [
+        "C-1003",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1003-adjuster-report.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1003",
+          "field": "cause",
+          "value": "rear-end collision"
+        },
+        {
+          "entity_id": "C-1003",
+          "field": "status",
+          "value": "denied"
+        },
+        {
+          "entity_id": "C-1003",
+          "field": "adjuster_id",
+          "value": "AD-001"
+        }
+      ],
+      "sha256": "68b7f7a2c7b307eb930810de5ec7157197228601a0faeb140f8b031e480dccc9",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-DENIAL",
+      "doc_type": "denial_letter",
+      "entity_ids": [
+        "C-1003",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1003-denial-letter.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1003",
+          "field": "status",
+          "value": "denied"
+        }
+      ],
+      "sha256": "a094cd113d3a13f0dde503f1bac377e4f0e1c58ed79912d2309aa80cc1ac1dd5",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-DENIAL-SCAN",
+      "doc_type": "denial_letter_scanned",
+      "entity_ids": [
+        "C-1003",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1003-denial-letter-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1003-DENIAL",
+      "sha256": "11f947844286ef42e3b74c6ebe40da48c7220ec80ace762a4bfdfcc82c04853b",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-EVIDENCE",
+      "doc_type": "evidence_photo",
+      "entity_ids": [
+        "C-1003"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "evidence/C-1003-evidence.jpg",
+      "prompt_spec": {
+        "caption": "A car with rear-end collision damage \u2014 crumpled rear bumper and dented boot \u2014 Motor claim C-1003 (Italy).",
+        "cause": "rear_end_collision",
+        "claim_id": "C-1003",
+        "country": "IT",
+        "damage_area": "rear bumper and boot",
+        "doc_id": "DOC-C-1003-EVIDENCE",
+        "kind": "vehicle_damage",
+        "line": "personal_auto",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)",
+        "params": {
+          "aspect_ratio": "4:3",
+          "resolution": "1K",
+          "seed": 4201989
+        },
+        "path": "evidence/C-1003-evidence.jpg",
+        "prompt": "A candid amateur smartphone photo submitted as insurance claim evidence in Italy: a car with rear-end collision damage \u2014 crumpled rear bumper and dented boot. Natural daylight, slightly imperfect amateur phone-camera framing, realistic and true-to-life. no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)."
+      },
+      "provenance": [
+        {
+          "entity_id": "C-1003",
+          "field": "evidence_damage",
+          "value": "rear bumper and boot"
+        }
+      ],
+      "rendered": true,
+      "sha256": "40a8568d4240a415fe58ba2d8e9d1eb3e2440f6b8d5a57e18360b3ef82d41803",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-FNOL",
+      "doc_type": "fnol",
+      "entity_ids": [
+        "C-1003",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1003-fnol.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1003",
+          "field": "cause",
+          "value": "rear-end collision"
+        },
+        {
+          "entity_id": "C-1003",
+          "field": "date_of_loss",
+          "value": "2024-03-29"
+        },
+        {
+          "entity_id": "C-1003",
+          "field": "status",
+          "value": "denied"
+        },
+        {
+          "entity_id": "C-1003",
+          "field": "policy_id",
+          "value": "MOT-0000002"
+        }
+      ],
+      "sha256": "de9f68a6abf42919525532302e57dd55d5d3fb22782cb5c9b6282ef70bd24e44",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-FNOL-SCAN",
+      "doc_type": "fnol_scanned",
+      "entity_ids": [
+        "C-1003",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1003-fnol-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1003-FNOL",
+      "sha256": "3039b4c0879ad1bab3e75da856fafa1b073f74d1170b843d8f9f1080a1f4f335",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1003-POLICE",
+      "doc_type": "police_report",
+      "entity_ids": [
+        "C-1003",
+        "MOT-0000002",
+        "PH-00002",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1003-police-report-scanned.jpg",
+      "provenance": [
+        {
+          "entity_id": "C-1003",
+          "field": "police_report_ref",
+          "value": "PR-2024-813499"
+        }
+      ],
+      "sha256": "5bd2e01f943891d85a1e7625f9d9fbb147982666010ad22a3989a8398f0c1a03",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-ACCIDENT",
+      "doc_type": "accident_statement",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1004-accident-statement.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1004",
+          "field": "line",
+          "value": "personal_auto"
+        }
+      ],
+      "sha256": "cfe711214c612f163f1f6b873b7fdd1e31677ff4f9b1d000767c100ecccfb6d1",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-ACCIDENT-SCAN",
+      "doc_type": "accident_statement_scanned",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1004-accident-statement-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1004-ACCIDENT",
+      "sha256": "d521cb552c8857aa5fcb30138313577e21a32de72218321400afdc4f629f438b",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-ADJ",
+      "doc_type": "adjuster_report",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1004-adjuster-report.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1004",
+          "field": "cause",
+          "value": "hail damage"
+        },
+        {
+          "entity_id": "C-1004",
+          "field": "status",
+          "value": "closed"
+        },
+        {
+          "entity_id": "C-1004",
+          "field": "adjuster_id",
+          "value": "AD-001"
+        }
+      ],
+      "sha256": "c1de5ebbee797c097c28e0eccf9b52f144348264f3f4b86c57f27de9fc27c423",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-ESTIMATE",
+      "doc_type": "estimate",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1004-estimate.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1004",
+          "field": "estimate_net_payable",
+          "value": "\u20ac48,950.00"
+        }
+      ],
+      "sha256": "24008ef5a9945bfbd5beab5c7d61222e102a48d2a5b543ee6a4009cde44da67b",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-EVIDENCE",
+      "doc_type": "evidence_photo",
+      "entity_ids": [
+        "C-1004"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "evidence/C-1004-evidence.jpg",
+      "prompt_spec": {
+        "caption": "A car bonnet and roof covered in small round hail dents \u2014 Motor claim C-1004 (Ireland).",
+        "cause": "hail",
+        "claim_id": "C-1004",
+        "country": "IE",
+        "damage_area": "bonnet and roof",
+        "doc_id": "DOC-C-1004-EVIDENCE",
+        "kind": "vehicle_damage",
+        "line": "personal_auto",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)",
+        "params": {
+          "aspect_ratio": "4:3",
+          "resolution": "1K",
+          "seed": 4201990
+        },
+        "path": "evidence/C-1004-evidence.jpg",
+        "prompt": "A candid amateur smartphone photo submitted as insurance claim evidence in Ireland: a car bonnet and roof covered in small round hail dents. Natural daylight, slightly imperfect amateur phone-camera framing, realistic and true-to-life. no real, identifiable public figures or celebrities; any business or premises depicted is generic and fictional, not a real named chain or brand; storefronts, shopfronts, signs, and premises carry no legible business names, shop signage, brand logos, or readable lettering (blank, blurred, or illegible signage only); no text overlays or stock-photo watermarks. (synthetic vehicle number plates on cars may remain visible)."
+      },
+      "provenance": [
+        {
+          "entity_id": "C-1004",
+          "field": "evidence_damage",
+          "value": "bonnet and roof"
+        }
+      ],
+      "rendered": true,
+      "sha256": "033f49cc748b8620c7e3744848dc48b6b67fbca5ace45c5eb358542d15256a3c",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-FNOL",
+      "doc_type": "fnol",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1004-fnol.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1004",
+          "field": "cause",
+          "value": "hail damage"
+        },
+        {
+          "entity_id": "C-1004",
+          "field": "date_of_loss",
+          "value": "2025-09-03"
+        },
+        {
+          "entity_id": "C-1004",
+          "field": "status",
+          "value": "closed"
+        },
+        {
+          "entity_id": "C-1004",
+          "field": "policy_id",
+          "value": "MOT-0000004"
+        }
+      ],
+      "sha256": "a9d0633c54598c5486b1b4ed6447d53ade6acc839778fd18674a15f899cb4972",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-FNOL-SCAN",
+      "doc_type": "fnol_scanned",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1004-fnol-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1004-FNOL",
+      "sha256": "0d34b4dca70b5e3ab7108df99fbffde8b43e667e82454193a38722a29aefc4d4",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-POLICE",
+      "doc_type": "police_report",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1004-police-report-scanned.jpg",
+      "provenance": [
+        {
+          "entity_id": "C-1004",
+          "field": "police_report_ref",
+          "value": "PR-2025-768556"
+        }
+      ],
+      "sha256": "bfe439065b4f215f230cbd666982f0919f1f10b6a75b8d75f154cbd599903c31",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-SETTLEMENT",
+      "doc_type": "settlement_letter",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/claim/C-1004-settlement-letter.pdf",
+      "provenance": [
+        {
+          "entity_id": "C-1004",
+          "field": "paid",
+          "value": "\u20ac48,950.00"
+        },
+        {
+          "entity_id": "C-1004",
+          "field": "status",
+          "value": "closed"
+        }
+      ],
+      "sha256": "3edcb0464bf05c8f6f41ebfc6d4ba4ce85b332c3c7846ef4c5d2ec5462956726",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-C-1004-SETTLEMENT-SCAN",
+      "doc_type": "settlement_letter_scanned",
+      "entity_ids": [
+        "C-1004",
+        "MOT-0000004",
+        "PH-00006",
+        "AD-001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/claim/C-1004-settlement-letter-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-C-1004-SETTLEMENT",
+      "sha256": "25d8e39d11846417dc71c7fae1c50f9f1dd663cd7c7e8ab83c0f489537a8d9cf",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000001-CONTRACT",
+      "doc_type": "policy_contract",
+      "entity_ids": [
+        "COM-0000001",
+        "PH-00006"
+      ],
+      "format": "docx",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000001-contract.docx",
+      "provenance": [
+        {
+          "entity_id": "COM-0000001",
+          "field": "line",
+          "value": "bop"
+        }
+      ],
+      "sha256": "ce4a4d0c9286eec83ee2f4757dc9a4d19c73a1a3a8efccfa7c2d59749557fdf5",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000001-DEC",
+      "doc_type": "policy_declarations",
+      "entity_ids": [
+        "COM-0000001",
+        "PH-00006",
+        "AG-003"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000001-declarations.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000001",
+          "field": "annual_premium",
+          "value": "\u20ac5,815.00"
+        },
+        {
+          "entity_id": "COM-0000001",
+          "field": "effective_date",
+          "value": "2023-08-20"
+        },
+        {
+          "entity_id": "COM-0000001",
+          "field": "expiry_date",
+          "value": "2024-08-19"
+        },
+        {
+          "entity_id": "COM-0000001",
+          "field": "line",
+          "value": "bop"
+        }
+      ],
+      "sha256": "5f331c05883269e955c07d34f2419c32a7bd679c17cd78cb557ae4edb74ac5e8",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000001-ENDORSEMENTS",
+      "doc_type": "policy_endorsements",
+      "entity_ids": [
+        "COM-0000001",
+        "PH-00006"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000001-endorsements.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000001",
+          "field": "endorsements",
+          "value": "HIRED_NONOWNED_AUTO, SPOILAGE"
+        }
+      ],
+      "sha256": "ed2d6a1c0d90f332e7cd395774d2f5b8822dbc856b5cb922982716c351f9466e",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000001-SCHEDULE",
+      "doc_type": "policy_schedule",
+      "entity_ids": [
+        "COM-0000001",
+        "PH-00006"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000001-schedule.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000001",
+          "field": "deductible",
+          "value": "\u20ac2,500.00"
+        }
+      ],
+      "sha256": "4f072cea81cc378e0232183e15d8a83cdb20b65223ec2eb17bc53e67ede07d8e",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000003-CONTRACT",
+      "doc_type": "policy_contract",
+      "entity_ids": [
+        "COM-0000003",
+        "PH-00004"
+      ],
+      "format": "docx",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000003-contract.docx",
+      "provenance": [
+        {
+          "entity_id": "COM-0000003",
+          "field": "line",
+          "value": "bop"
+        }
+      ],
+      "sha256": "0f9395bfacb0520d1ecd28bd9c4aad0e0497c67cf1ab54e13f5f5f6eb16f4419",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000003-DEC",
+      "doc_type": "policy_declarations",
+      "entity_ids": [
+        "COM-0000003",
+        "PH-00004",
+        "AG-003"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000003-declarations.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000003",
+          "field": "annual_premium",
+          "value": "\u20ac2,620.00"
+        },
+        {
+          "entity_id": "COM-0000003",
+          "field": "effective_date",
+          "value": "2024-02-20"
+        },
+        {
+          "entity_id": "COM-0000003",
+          "field": "expiry_date",
+          "value": "2025-02-19"
+        },
+        {
+          "entity_id": "COM-0000003",
+          "field": "line",
+          "value": "bop"
+        }
+      ],
+      "sha256": "85a7115d3ef8fb97b04b73b8d559e12cba05a3a866ec11cf550dadce1bd5c31a",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000003-ENDORSEMENTS",
+      "doc_type": "policy_endorsements",
+      "entity_ids": [
+        "COM-0000003",
+        "PH-00004"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000003-endorsements.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000003",
+          "field": "endorsements",
+          "value": "EPLI, EQUIP_BREAKDOWN"
+        }
+      ],
+      "sha256": "ee103917f8871cb6bd516b70ed2db747f47bf133a8ce2ca7c4835ea8e2c8b5a4",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000003-SCHEDULE",
+      "doc_type": "policy_schedule",
+      "entity_ids": [
+        "COM-0000003",
+        "PH-00004"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000003-schedule.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000003",
+          "field": "deductible",
+          "value": "\u20ac1,000.00"
+        }
+      ],
+      "sha256": "2e077fa597a76ddfe1e4422ab40f14bf07e4c2133793ed11360442d30c724b98",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000005-CONTRACT",
+      "doc_type": "policy_contract",
+      "entity_ids": [
+        "COM-0000005",
+        "PH-00003"
+      ],
+      "format": "docx",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000005-contract.docx",
+      "provenance": [
+        {
+          "entity_id": "COM-0000005",
+          "field": "line",
+          "value": "bop"
+        }
+      ],
+      "sha256": "0d0fa22d7de43607ac6341445dd7d322615608f4e2c452b0335a683109053a30",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000005-DEC",
+      "doc_type": "policy_declarations",
+      "entity_ids": [
+        "COM-0000005",
+        "PH-00003",
+        "AG-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000005-declarations.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000005",
+          "field": "annual_premium",
+          "value": "\u20ac2,305.00"
+        },
+        {
+          "entity_id": "COM-0000005",
+          "field": "effective_date",
+          "value": "2023-11-04"
+        },
+        {
+          "entity_id": "COM-0000005",
+          "field": "expiry_date",
+          "value": "2024-11-03"
+        },
+        {
+          "entity_id": "COM-0000005",
+          "field": "line",
+          "value": "bop"
+        }
+      ],
+      "sha256": "8d1af350a7793787bce4ee7aece19385a98a107b59a5c77dba8eb31f75f81742",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000005-ENDORSEMENTS",
+      "doc_type": "policy_endorsements",
+      "entity_ids": [
+        "COM-0000005",
+        "PH-00003"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000005-endorsements.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000005",
+          "field": "endorsements",
+          "value": "CYBER, EPLI, HIRED_NONOWNED_AUTO"
+        }
+      ],
+      "sha256": "4a57ccfec799ae543c7a64ddc5611fddd2f955a07d5bddecbd76f77e576b3bce",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-COM-0000005-SCHEDULE",
+      "doc_type": "policy_schedule",
+      "entity_ids": [
+        "COM-0000005",
+        "PH-00003"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/COM-0000005-schedule.pdf",
+      "provenance": [
+        {
+          "entity_id": "COM-0000005",
+          "field": "deductible",
+          "value": "\u20ac5,000.00"
+        }
+      ],
+      "sha256": "1337e3750a49872d29ac26869364cc0e89e1feaa393febb528f593ce9a1e77ac",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-KB-CLAIMS",
+      "doc_type": "claims_manual",
+      "entity_ids": [],
+      "format": "docx",
+      "is_scanned": false,
+      "path": "docs/kb/claims-handling-manual.docx",
+      "provenance": [],
+      "sha256": "c2e97414137a92ac425548569e63482cb15b42073fbcc9415d46b36db490b566",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-KB-FAQ",
+      "doc_type": "customer_faq",
+      "entity_ids": [],
+      "format": "md",
+      "is_scanned": false,
+      "path": "docs/kb/customer-faq.md",
+      "provenance": [],
+      "sha256": "fb594856ca63c053b8c60ee01609349e01d6184dbb3248096290bba521783804",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-KB-UW",
+      "doc_type": "underwriting_guidelines",
+      "entity_ids": [],
+      "format": "md",
+      "is_scanned": false,
+      "path": "docs/kb/underwriting-guidelines.md",
+      "provenance": [
+        {
+          "entity_id": "CORPUS",
+          "field": "lines_of_business",
+          "value": "Motor, Household, Commercial"
+        }
+      ],
+      "sha256": "ae388165bc742767d5ef529024ac5b6c3b4f3e814bd6b890509860c4f102fb43",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-MOT-0000002-CONTRACT",
+      "doc_type": "policy_contract",
+      "entity_ids": [
+        "MOT-0000002",
+        "PH-00002"
+      ],
+      "format": "docx",
+      "is_scanned": false,
+      "path": "docs/policy/MOT-0000002-contract.docx",
+      "provenance": [
+        {
+          "entity_id": "MOT-0000002",
+          "field": "line",
+          "value": "personal_auto"
+        }
+      ],
+      "sha256": "3bbbfe89e1420ea7f210f4c4a595875ff7337ec5c04b02cdbfb5dff4ce5e700c",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-MOT-0000002-DEC",
+      "doc_type": "policy_declarations",
+      "entity_ids": [
+        "MOT-0000002",
+        "PH-00002",
+        "AG-003"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/MOT-0000002-declarations.pdf",
+      "provenance": [
+        {
+          "entity_id": "MOT-0000002",
+          "field": "annual_premium",
+          "value": "\u20ac2,075.00"
+        },
+        {
+          "entity_id": "MOT-0000002",
+          "field": "effective_date",
+          "value": "2023-11-26"
+        },
+        {
+          "entity_id": "MOT-0000002",
+          "field": "expiry_date",
+          "value": "2024-11-25"
+        },
+        {
+          "entity_id": "MOT-0000002",
+          "field": "line",
+          "value": "personal_auto"
+        },
+        {
+          "entity_id": "MOT-0000002",
+          "field": "vehicle",
+          "value": "Peugeot 208"
+        }
+      ],
+      "sha256": "4e6097ea0ac76c48622edb5e7ed903dc4decb5e373bec2bacc96188b8e2ef2c1",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-MOT-0000002-ENDORSEMENTS",
+      "doc_type": "policy_endorsements",
+      "entity_ids": [
+        "MOT-0000002",
+        "PH-00002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/MOT-0000002-endorsements.pdf",
+      "provenance": [
+        {
+          "entity_id": "MOT-0000002",
+          "field": "endorsements",
+          "value": "NEW_CAR_REPL"
+        }
+      ],
+      "sha256": "28e09eae4980c81bb7b63354d9ee2daad9a3d89d9d04f9c3a7ec9bf7a0f95884",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-MOT-0000002-SCHEDULE",
+      "doc_type": "policy_schedule",
+      "entity_ids": [
+        "MOT-0000002",
+        "PH-00002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/MOT-0000002-schedule.pdf",
+      "provenance": [
+        {
+          "entity_id": "MOT-0000002",
+          "field": "deductible",
+          "value": "\u20ac1,000.00"
+        }
+      ],
+      "sha256": "2a9ea212968a5cd8ed653cf389c17a1791f0f1b77eba9e617ed36d0bae7ec3e1",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-MOT-0000004-CONTRACT",
+      "doc_type": "policy_contract",
+      "entity_ids": [
+        "MOT-0000004",
+        "PH-00006"
+      ],
+      "format": "docx",
+      "is_scanned": false,
+      "path": "docs/policy/MOT-0000004-contract.docx",
+      "provenance": [
+        {
+          "entity_id": "MOT-0000004",
+          "field": "line",
+          "value": "personal_auto"
+        }
+      ],
+      "sha256": "fc6ea3c5a97e1ea664b7fea2fce82c219124bf0b5e6b77a1074df9cae4c00de2",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-MOT-0000004-DEC",
+      "doc_type": "policy_declarations",
+      "entity_ids": [
+        "MOT-0000004",
+        "PH-00006",
+        "AG-001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/MOT-0000004-declarations.pdf",
+      "provenance": [
+        {
+          "entity_id": "MOT-0000004",
+          "field": "annual_premium",
+          "value": "\u20ac960.00"
+        },
+        {
+          "entity_id": "MOT-0000004",
+          "field": "effective_date",
+          "value": "2024-12-04"
+        },
+        {
+          "entity_id": "MOT-0000004",
+          "field": "expiry_date",
+          "value": "2025-12-04"
+        },
+        {
+          "entity_id": "MOT-0000004",
+          "field": "line",
+          "value": "personal_auto"
+        },
+        {
+          "entity_id": "MOT-0000004",
+          "field": "vehicle",
+          "value": "Opel Astra"
+        }
+      ],
+      "sha256": "378d93583ef9a8490ccda56e1e80eb302ee7c16b72422bb7d720f498f45aa86c",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-MOT-0000004-ENDORSEMENTS",
+      "doc_type": "policy_endorsements",
+      "entity_ids": [
+        "MOT-0000004",
+        "PH-00006"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/MOT-0000004-endorsements.pdf",
+      "provenance": [
+        {
+          "entity_id": "MOT-0000004",
+          "field": "endorsements",
+          "value": "GAP, NEW_CAR_REPL, UM_UIM"
+        }
+      ],
+      "sha256": "13d0470847b26c19de252d30bf4087535c3695ef4e8eacbc1aaa99c09995d606",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-MOT-0000004-SCHEDULE",
+      "doc_type": "policy_schedule",
+      "entity_ids": [
+        "MOT-0000004",
+        "PH-00006"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/policy/MOT-0000004-schedule.pdf",
+      "provenance": [
+        {
+          "entity_id": "MOT-0000004",
+          "field": "deductible",
+          "value": "\u20ac500.00"
+        }
+      ],
+      "sha256": "d389b1c08babfb34770e6894b66ebd98c6e259c0f72cc86ab624293bae80e81e",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00001-FACE",
+      "doc_type": "id_photo",
+      "entity_ids": [
+        "PH-00001"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "faces/PH-00001-face.jpg",
+      "prompt_spec": {
+        "caption": "Synthetic ID portrait for policyholder PH-00001 (Netherlands).",
+        "country": "NL",
+        "doc_id": "DOC-PH-00001-FACE",
+        "holder_id": "PH-00001",
+        "kind": "id_portrait",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border",
+        "params": {
+          "aspect_ratio": "4:5",
+          "resolution": "512",
+          "seed": 4201811
+        },
+        "path": "faces/PH-00001-face.jpg",
+        "prompt": "A neutral passport-style identity portrait of a fictional Netherlands resident (an older woman of mixed heritage, with shoulder-length hair): head and shoulders, facing the camera, plain light-grey background, even studio lighting, neutral expression. Photorealistic but an entirely invented, non-existent person. not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border."
+      },
+      "provenance": [
+        {
+          "entity_id": "PH-00001",
+          "field": "portrait",
+          "value": "Synthetic ID portrait for policyholder PH-00001 (Netherlands)."
+        }
+      ],
+      "rendered": true,
+      "sha256": "30be08223374504d27ae827beb629de7176a655d087fb4ad5b14be3c0bdc6100",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00001-IDCARD",
+      "doc_type": "id_card",
+      "entity_ids": [
+        "PH-00001"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/identity/PH-00001-id-card.pdf",
+      "provenance": [
+        {
+          "entity_id": "PH-00001",
+          "field": "national_id",
+          "value": "338908380"
+        },
+        {
+          "entity_id": "PH-00001",
+          "field": "dob",
+          "value": "1999-01-03"
+        },
+        {
+          "entity_id": "PH-00001",
+          "field": "country",
+          "value": "NL"
+        }
+      ],
+      "sha256": "eae75dd3806d8db0793b670872f42663f3d26946d42f19ef3dec24ab343ed0c5",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00001-IDCARD-SCAN",
+      "doc_type": "id_card_scanned",
+      "entity_ids": [
+        "PH-00001"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/identity/PH-00001-id-card-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-PH-00001-IDCARD",
+      "sha256": "f9631cca0095da67f7406a662ddf81436b78c9eeb750e03aacfbe725eeda215e",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00002-FACE",
+      "doc_type": "id_photo",
+      "entity_ids": [
+        "PH-00002"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "faces/PH-00002-face.jpg",
+      "prompt_spec": {
+        "caption": "Synthetic ID portrait for policyholder PH-00002 (Italy).",
+        "country": "IT",
+        "doc_id": "DOC-PH-00002-FACE",
+        "holder_id": "PH-00002",
+        "kind": "id_portrait",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border",
+        "params": {
+          "aspect_ratio": "4:5",
+          "resolution": "512",
+          "seed": 4201812
+        },
+        "path": "faces/PH-00002-face.jpg",
+        "prompt": "A neutral passport-style identity portrait of a fictional Italy resident (an older man of Northern European descent with fair skin, with curly hair): head and shoulders, facing the camera, plain light-grey background, even studio lighting, neutral expression. Photorealistic but an entirely invented, non-existent person. not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border."
+      },
+      "provenance": [
+        {
+          "entity_id": "PH-00002",
+          "field": "portrait",
+          "value": "Synthetic ID portrait for policyholder PH-00002 (Italy)."
+        }
+      ],
+      "rendered": true,
+      "sha256": "019042fdd6e2b09e44892302f74b84c7a06b3b70208845b9ceeb515ddb4f13b7",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00002-IDCARD",
+      "doc_type": "id_card",
+      "entity_ids": [
+        "PH-00002"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/identity/PH-00002-id-card.pdf",
+      "provenance": [
+        {
+          "entity_id": "PH-00002",
+          "field": "national_id",
+          "value": "ZAYZFW65Z42G511M"
+        },
+        {
+          "entity_id": "PH-00002",
+          "field": "dob",
+          "value": "1973-10-09"
+        },
+        {
+          "entity_id": "PH-00002",
+          "field": "country",
+          "value": "IT"
+        }
+      ],
+      "sha256": "a1d5d8fd8fb345b2b4b8952a8aad907fc7581e54079d2b5230c0c7fa4733c612",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00002-IDCARD-SCAN",
+      "doc_type": "id_card_scanned",
+      "entity_ids": [
+        "PH-00002"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/identity/PH-00002-id-card-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-PH-00002-IDCARD",
+      "sha256": "0e047498cd858c6eb2a969793096902f5efc55544865c0a8d87c76214416906b",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00003-FACE",
+      "doc_type": "id_photo",
+      "entity_ids": [
+        "PH-00003"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "faces/PH-00003-face.jpg",
+      "prompt_spec": {
+        "caption": "Synthetic ID portrait for policyholder PH-00003 (Germany).",
+        "country": "DE",
+        "doc_id": "DOC-PH-00003-FACE",
+        "holder_id": "PH-00003",
+        "kind": "id_portrait",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border",
+        "params": {
+          "aspect_ratio": "4:5",
+          "resolution": "512",
+          "seed": 4201813
+        },
+        "path": "faces/PH-00003-face.jpg",
+        "prompt": "A neutral passport-style identity portrait of a fictional Germany resident (a middle-aged woman of Mediterranean European descent with olive skin, with short hair): head and shoulders, facing the camera, plain light-grey background, even studio lighting, neutral expression. Photorealistic but an entirely invented, non-existent person. not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border."
+      },
+      "provenance": [
+        {
+          "entity_id": "PH-00003",
+          "field": "portrait",
+          "value": "Synthetic ID portrait for policyholder PH-00003 (Germany)."
+        }
+      ],
+      "rendered": true,
+      "sha256": "d92dade48ba561cf11177e5053cac7f59910c25452b2c38d0ad684be831ea798",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00003-IDCARD",
+      "doc_type": "id_card",
+      "entity_ids": [
+        "PH-00003"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/identity/PH-00003-id-card.pdf",
+      "provenance": [
+        {
+          "entity_id": "PH-00003",
+          "field": "national_id",
+          "value": "04078161849"
+        },
+        {
+          "entity_id": "PH-00003",
+          "field": "dob",
+          "value": "1947-06-20"
+        },
+        {
+          "entity_id": "PH-00003",
+          "field": "country",
+          "value": "DE"
+        }
+      ],
+      "sha256": "d601e7f8b833607f1d312b822b48bb085f877cff624e27207cdcac3b0f7ef50e",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00003-IDCARD-SCAN",
+      "doc_type": "id_card_scanned",
+      "entity_ids": [
+        "PH-00003"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/identity/PH-00003-id-card-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-PH-00003-IDCARD",
+      "sha256": "e7a8c66fccd000b421f9a4ee1878174fe34062249d81f516a2bd548c38e5b126",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00004-FACE",
+      "doc_type": "id_photo",
+      "entity_ids": [
+        "PH-00004"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "faces/PH-00004-face.jpg",
+      "prompt_spec": {
+        "caption": "Synthetic ID portrait for policyholder PH-00004 (Spain).",
+        "country": "ES",
+        "doc_id": "DOC-PH-00004-FACE",
+        "holder_id": "PH-00004",
+        "kind": "id_portrait",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border",
+        "params": {
+          "aspect_ratio": "4:5",
+          "resolution": "512",
+          "seed": 4201814
+        },
+        "path": "faces/PH-00004-face.jpg",
+        "prompt": "A neutral passport-style identity portrait of a fictional Spain resident (a young man of Mediterranean European descent with olive skin, with light hair): head and shoulders, facing the camera, plain light-grey background, even studio lighting, neutral expression. Photorealistic but an entirely invented, non-existent person. not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border."
+      },
+      "provenance": [
+        {
+          "entity_id": "PH-00004",
+          "field": "portrait",
+          "value": "Synthetic ID portrait for policyholder PH-00004 (Spain)."
+        }
+      ],
+      "rendered": true,
+      "sha256": "1880e563194fcbc4987236aad27d24377408fa5f705103c8d81d1434574fe4d2",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00004-IDCARD",
+      "doc_type": "id_card",
+      "entity_ids": [
+        "PH-00004"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/identity/PH-00004-id-card.pdf",
+      "provenance": [
+        {
+          "entity_id": "PH-00004",
+          "field": "national_id",
+          "value": "88753260-X"
+        },
+        {
+          "entity_id": "PH-00004",
+          "field": "dob",
+          "value": "1956-02-02"
+        },
+        {
+          "entity_id": "PH-00004",
+          "field": "country",
+          "value": "ES"
+        }
+      ],
+      "sha256": "07a8638a23015b345ffdd300e0b0ce28a139bb276188fb90217b42770256c380",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00004-IDCARD-SCAN",
+      "doc_type": "id_card_scanned",
+      "entity_ids": [
+        "PH-00004"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/identity/PH-00004-id-card-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-PH-00004-IDCARD",
+      "sha256": "5c60db63634bfb53809beeb4051e9b585bfe1ec5cb1e44bbe25b8088fc1b559e",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00005-FACE",
+      "doc_type": "id_photo",
+      "entity_ids": [
+        "PH-00005"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "faces/PH-00005-face.jpg",
+      "prompt_spec": {
+        "caption": "Synthetic ID portrait for policyholder PH-00005 (France).",
+        "country": "FR",
+        "doc_id": "DOC-PH-00005-FACE",
+        "holder_id": "PH-00005",
+        "kind": "id_portrait",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border",
+        "params": {
+          "aspect_ratio": "4:5",
+          "resolution": "512",
+          "seed": 4201815
+        },
+        "path": "faces/PH-00005-face.jpg",
+        "prompt": "A neutral passport-style identity portrait of a fictional France resident (a middle-aged woman of Mediterranean European descent with olive skin, with curly hair): head and shoulders, facing the camera, plain light-grey background, even studio lighting, neutral expression. Photorealistic but an entirely invented, non-existent person. not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border."
+      },
+      "provenance": [
+        {
+          "entity_id": "PH-00005",
+          "field": "portrait",
+          "value": "Synthetic ID portrait for policyholder PH-00005 (France)."
+        }
+      ],
+      "rendered": true,
+      "sha256": "d7dcf268ae01fcfb6402914a21f2ff37451ea895e548b79639c0b9bfc5f08c00",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00005-IDCARD",
+      "doc_type": "id_card",
+      "entity_ids": [
+        "PH-00005"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/identity/PH-00005-id-card.pdf",
+      "provenance": [
+        {
+          "entity_id": "PH-00005",
+          "field": "national_id",
+          "value": "016475255341928"
+        },
+        {
+          "entity_id": "PH-00005",
+          "field": "dob",
+          "value": "1996-04-28"
+        },
+        {
+          "entity_id": "PH-00005",
+          "field": "country",
+          "value": "FR"
+        }
+      ],
+      "sha256": "f32b8a76afea2da89f08216f2d63eefd3156077ec8cd32f75095de0628cdf966",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00005-IDCARD-SCAN",
+      "doc_type": "id_card_scanned",
+      "entity_ids": [
+        "PH-00005"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/identity/PH-00005-id-card-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-PH-00005-IDCARD",
+      "sha256": "6e0a01b8ed2ce0c20d40b63e2d0359544b674859afc81ddac5d20ea3796bda6b",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00006-FACE",
+      "doc_type": "id_photo",
+      "entity_ids": [
+        "PH-00006"
+      ],
+      "format": "jpg",
+      "is_generated": true,
+      "is_scanned": false,
+      "path": "faces/PH-00006-face.jpg",
+      "prompt_spec": {
+        "caption": "Synthetic ID portrait for policyholder PH-00006 (Ireland).",
+        "country": "IE",
+        "doc_id": "DOC-PH-00006-FACE",
+        "holder_id": "PH-00006",
+        "kind": "id_portrait",
+        "model": "gemini-3.1-flash-image",
+        "negative_prompt": "not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border",
+        "params": {
+          "aspect_ratio": "4:5",
+          "resolution": "512",
+          "seed": 4201816
+        },
+        "path": "faces/PH-00006-face.jpg",
+        "prompt": "A neutral passport-style identity portrait of a fictional Ireland resident (a man in their thirties of Eastern European / Slavic descent, with light hair): head and shoulders, facing the camera, plain light-grey background, even studio lighting, neutral expression. Photorealistic but an entirely invented, non-existent person. not a real or identifiable person, not a celebrity or public figure, not a likeness of any existing individual; no text, no watermark, no document border."
+      },
+      "provenance": [
+        {
+          "entity_id": "PH-00006",
+          "field": "portrait",
+          "value": "Synthetic ID portrait for policyholder PH-00006 (Ireland)."
+        }
+      ],
+      "rendered": true,
+      "sha256": "9ed14809c97096fc304b09ef1d82805d9b61a3a519d05c4d1d64f733c2b5807d",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00006-IDCARD",
+      "doc_type": "id_card",
+      "entity_ids": [
+        "PH-00006"
+      ],
+      "format": "pdf",
+      "is_scanned": false,
+      "path": "docs/identity/PH-00006-id-card.pdf",
+      "provenance": [
+        {
+          "entity_id": "PH-00006",
+          "field": "national_id",
+          "value": "4528972TA"
+        },
+        {
+          "entity_id": "PH-00006",
+          "field": "dob",
+          "value": "1991-08-13"
+        },
+        {
+          "entity_id": "PH-00006",
+          "field": "country",
+          "value": "IE"
+        }
+      ],
+      "sha256": "7bea862734982d32c51955a011313a02a064b25071d8bac8c0185bd1b04d5c0e",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-PH-00006-IDCARD-SCAN",
+      "doc_type": "id_card_scanned",
+      "entity_ids": [
+        "PH-00006"
+      ],
+      "format": "jpg",
+      "is_scanned": true,
+      "path": "docs/identity/PH-00006-id-card-scanned.jpg",
+      "provenance": [],
+      "scanned_of": "DOC-PH-00006-IDCARD",
+      "sha256": "1ddb6d845786e324e1081065d30ea59fee305eb84f437ca24f4379c1a6cd35df",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-TAB-COMMISSION",
+      "doc_type": "commission_summary",
+      "entity_ids": [
+        "AG-001",
+        "AG-002",
+        "AG-003"
+      ],
+      "format": "csv",
+      "is_scanned": false,
+      "path": "docs/tabular/commission-summary.csv",
+      "provenance": [],
+      "sha256": "03d53d5c9e0bd6be9aad2036ee20f0bfdfd6b84bee59202211cca27c894599c6",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-TAB-LOSS-RUN",
+      "doc_type": "loss_run",
+      "entity_ids": [
+        "C-1000",
+        "C-1001",
+        "C-1002",
+        "C-1003",
+        "C-1004"
+      ],
+      "format": "xlsx",
+      "is_scanned": false,
+      "path": "docs/tabular/loss-run.xlsx",
+      "provenance": [
+        {
+          "entity_id": "CORPUS",
+          "field": "open_claim_count",
+          "value": "1"
+        }
+      ],
+      "sha256": "f817b763a25672190e4705a878f434425ba6c84859fd2e03a6de0b1b03b846a2",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-TAB-PREMIUM",
+      "doc_type": "premium_register",
+      "entity_ids": [
+        "COM-0000001",
+        "MOT-0000002",
+        "COM-0000003",
+        "MOT-0000004",
+        "COM-0000005"
+      ],
+      "format": "xlsx",
+      "is_scanned": false,
+      "path": "docs/tabular/premium-register.xlsx",
+      "provenance": [
+        {
+          "entity_id": "CORPUS",
+          "field": "total_annual_premium",
+          "value": "\u20ac13,775.00"
+        }
+      ],
+      "sha256": "7eb91c82cfbb44039529487e6bea8239cadba80cd918d55293fc41bda08d5d76",
+      "synthetic": true
+    },
+    {
+      "doc_id": "DOC-TAB-RESERVE",
+      "doc_type": "reserve_register",
+      "entity_ids": [
+        "C-1001"
+      ],
+      "format": "xlsx",
+      "is_scanned": false,
+      "path": "docs/tabular/reserve-register.xlsx",
+      "provenance": [
+        {
+          "entity_id": "CORPUS",
+          "field": "total_open_reserve",
+          "value": "\u20ac2,050.00"
+        }
+      ],
+      "sha256": "ff78736e63589b2b7f8bc41846a62d839c945f0ae83f8b969d238d23961575c2",
+      "synthetic": true
+    }
+  ],
+  "generator_version": "0.0.1",
+  "marker": "SYNTHETIC \u2014 Meridian Mutual (fictional)",
+  "profile": "sample",
+  "seed": 42,
+  "synthetic": true
+}

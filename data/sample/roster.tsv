@@ -1,0 +1,22 @@
+id	type	name	line	parent_id	status	detail
+PH-00001	policyholder	Ali Schellekens				Sint Joost, NL
+PH-00002	policyholder	Dott. Alfio Leone				Tresilico, IT
+PH-00003	policyholder	Dorit Etzold				Hünfeld, DE
+PH-00004	policyholder	Albano Llopis Hierro				Valladolid, ES
+PH-00005	policyholder	Aurore Maury				Leblanc-la-Forêt, FR
+PH-00006	policyholder	Mr. Stewart Montague				Dermot Ville, IE
+AG-001	agent	Mr. Alister Kinnear				Hyman Insurance Group; Ireland
+AG-002	agent	Aleksandr Weihmann				Höfig Risk Partners; Germany
+AG-003	agent	Alexandre Traore				Paris Assurances; France
+AD-001	adjuster	Frédéric Joly-Gallet				motor physical damage
+AD-002	adjuster	Colm Davis				motor physical damage
+COM-0000001	policy	Commercial policy — Mr. Stewart Montague	bop	PH-00006		agent=AG-003; eff=2023-08-20
+COM-0000003	policy	Commercial policy — Albano Llopis Hierro	bop	PH-00004		agent=AG-003; eff=2024-02-20
+COM-0000005	policy	Commercial policy — Dorit Etzold	bop	PH-00003		agent=AG-001; eff=2023-11-04
+MOT-0000002	policy	Motor policy — Dott. Alfio Leone	personal_auto	PH-00002		agent=AG-003; eff=2023-11-26
+MOT-0000004	policy	Motor policy — Mr. Stewart Montague	personal_auto	PH-00006		agent=AG-001; eff=2024-12-04
+C-1000	claim	Commercial claim — business interruption	bop	COM-0000001	closed	dol=2024-07-13; adjuster=AD-002
+C-1001	claim	Motor claim — vandalism	personal_auto	MOT-0000002	open	dol=2024-02-17; adjuster=AD-002
+C-1002	claim	Motor claim — theft	personal_auto	MOT-0000004	denied	dol=2025-01-31; adjuster=AD-001
+C-1003	claim	Motor claim — rear end collision	personal_auto	MOT-0000002	denied	dol=2024-03-29; adjuster=AD-001
+C-1004	claim	Motor claim — hail	personal_auto	MOT-0000004	closed	dol=2025-09-03; adjuster=AD-001
